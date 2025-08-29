@@ -218,7 +218,7 @@ class BlueJaysAnalysis:
                     print(f"  {stat}: {value:.3f}" if isinstance(value, (int, float)) else f"  {stat}: {value}")
         
         # Player Analysis
-        print("\n⭐ Analyzing Individual Player Performance...")
+        print("\n Analyzing Individual Player Performance...")
         player_stats = self.player_performance_analysis()
         
         if player_stats is not None:
@@ -228,7 +228,7 @@ class BlueJaysAnalysis:
                 for idx, player in top_ops.iterrows():
                     print(f"  {player['Name']}: OPS {player['OPS']:.3f}, AVG {player['AVG']:.3f}, HR {player['HR']}, RBI {player['RBI']}")
         
-        print("\n✅ Analysis Complete!")
+        print("\n Analysis Complete")
 
 # Example usage
 if __name__ == "__main__":
@@ -241,4 +241,5 @@ if __name__ == "__main__":
     # You can also run individual analyses:
     # batting_data = blue_jays.analyze_offensive_performance()
     # pitching_data = blue_jays.analyze_pitching_performance()
+
     # player_data = blue_jays.player_performance_analysis(2024)
